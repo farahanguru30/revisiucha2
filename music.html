@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lagu Favorit - My Universe</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #e1bee7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .top-nav {
+      background-color: #4a148c;
+      color: white;
+      padding: 15px 30px;
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .brand h2 {
+      font-size: 22px;
+    }
+    .nav-menu {
+      display: flex;
+      gap: 20px;
+    }
+    .nav-item {
+      padding: 10px 15px;
+      border-radius: 8px;
+      background: #7b1fa2;
+      color: white;
+      text-decoration: none;
+    }
+    .main-content {
+      padding: 30px;
+    }
+    .section-header h3 {
+      color: #6a1b9a;
+      margin-bottom: 20px;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .gallery-item {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery-item img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .gallery-item:hover {
+      transform: translateY(-5px);
+    }
+    .caption {
+      margin-top: 10px;
+    }
+    .caption h4 {
+      color: #6a1b9a;
+      margin-bottom: 5px;
+    }
+    .caption p {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-nav">
+    <div class="nav-container">
+      <div class="brand"><h2>My Universe</h2></div>
+      <div class="nav-menu">
+        <a class="nav-item" href="dashboard.html">🏠 Dashboard</a>
+        <a class="nav-item" href="animek.html">🎬 Anime</a>
+        <a class="nav-item" href="makeup.html">💄 Make Up</a>
+        <a class="nav-item" href="login1.html">🚪 Keluar</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="section-header"><h3>Lagu Favorit</h3></div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="lose.jpg" alt="Snooze">
+        <div class="caption">
+          <h4>Snooze</h4>
+          <p>Lagu penuh cinta dan pengorbanan mendalam dari SZA.</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="open arms.jpg" alt="Open Arms">
+        <div class="caption">
+          <h4>Open Arms</h4>
+          <p>Tentang cinta dan kesetiaan tanpa syarat.</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="backbunner.jpg" alt="Backburner">
+        <div class="caption">
+          <h4>Backburner</h4>
+          <p>Cinta tak tersampaikan dan rasa kehilangan yang mendalam.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
